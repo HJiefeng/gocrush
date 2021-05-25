@@ -1,9 +1,5 @@
 package gocrush
 
-import (
-//	"log"
-)
-
 func Select(parent Node, input int64, count int, nodeType int, c Comparitor) []Node {
 	var results []Node
 	//if len(parent.Children) < count {
