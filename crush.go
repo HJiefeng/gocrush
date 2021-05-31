@@ -1,6 +1,6 @@
 package gocrush
 
-func Select(parent Node, input int64, count int, nodeType int, c Comparitor) []Node {
+func Select(parent Node, input int64, count int, nodeType int, c Comparator) []Node {
 	var results []Node
 	//if len(parent.Children) < count {
 	//	panic("Asked for more node than are available")

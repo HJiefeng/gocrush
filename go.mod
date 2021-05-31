@@ -1,4 +1,4 @@
-module gocrush
+module github.com/HJiefeng/gocrush
 
 go 1.16
 

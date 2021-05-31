@@ -13,7 +13,7 @@ type Node interface {
 	Select(input int64, round int64) Node
 }
 
-type Comparitor func(Node) bool
+type Comparator func(Node) bool
 
 type CrushNode struct {
 	Selector Selector
