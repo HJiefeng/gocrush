@@ -1,10 +1,11 @@
 package gocrush
 
 import (
-	"github.com/stretchr/testify/assert"
 	"log"
 	"strconv"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 const (

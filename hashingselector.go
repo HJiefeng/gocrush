@@ -38,7 +38,7 @@ func NewHashingSelector(n Node) *HashingSelector {
 		}
 	}
 	h.tokenList = make([]int64, 0, len(h.tokenMap))
-	for k, _ := range h.tokenMap {
+	for k := range h.tokenMap {
 		h.tokenList = append(h.tokenList, k)
 	}
 	sort.Sort(h.tokenList)
@@ -71,8 +71,7 @@ func digestInt64(input int64) []byte {
 	binary.Write(buf, binary.LittleEndian, input)
 	bytes := buf.Bytes()
 	result := sha1.Sum(bytes)
-	var hash []byte
-	hash = make([]byte, 20)
+	hash := make([]byte, 20)
 	copy(hash[:], result[:20])
 	return hash
 }
